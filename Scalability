@@ -1,0 +1,53 @@
+Scalability : 
+  It is an ability of a system to handle increased load by adding resources			How to measure the scalability : 
+  - requests per second : number of API calls the system handles
+  - concurrent users : more number of users actively using the system
+  - Data transfer per unit 
+  - Query rate : DB queries per second 
+  - message rate : number of messages processed per unit(ex: 10000 mgs/s)
+  - performance load testing 
+
+Types of scaling : 
+  - Vertical Scaling :  Adding more power to the existing system to handle the load
+    (Ex: A has 4 CPU’s and 16 GB ram => A Now has 32 CPU’s and 256 GB ram)
+  Pros : 
+    1: No code changes required , just upgrade to higher version
+    2: low latency : due to high performance , cause low delay between user request and server response (Low latency means the system responds very quickly after a user sends a        request.)
+
+When to use Vertical Scaling: 
+  - Databases with data in one place – All data stays on one server, so it’s faster and easier to manage.
+  - Applications needing strong consistency – One server helps keep data accurate and avoids conflicts.
+  - Predictable, moderate growth – If traffic grows slowly, you can just upgrade the server hardware. 🚀
+  - Early-stage startups – Easier and simpler to manage one powerful server than many servers.
+
+Pros (Advantages)
+  - Simple to use – No need to change the application code. Just upgrade to a more powerful machine.
+  - Lower latency – All data is on the same server, so responses are faster.
+  - Less complexity – Only one server, so there are no network or data synchronization problems.
+
+Cons (Disadvantages)
+  - Hardware limits – You cannot grow beyond the biggest machine available.
+  - Single point of failure – If the server crashes, the whole system stops working.
+  - Expensive at large scale – Bigger machines cost much more than smaller ones.
+  - Downtime during upgrades – Moving to a bigger server may require stopping the system for some time.
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------******
+
+Horizontal Scaling : 
+  Instead of one powerful server , we can have multiple servers which handles the load distributed by the load balancer. 
+
+   * Vertical scaling eventually hits a ceiling. When the biggest available machine is not big enough, or when you need fault tolerance that a single machine cannot provide, you       need a different approach.
+  - Horizontal scaling means adding more machines rather than upgrading existing ones. Instead of one powerful server, you distribute the load across many commodity servers.
+  - This is how companies like Google, Netflix, and Amazon handle billions of requests.
+Pros (Advantages)
+  - No hard limit – You can keep adding more servers when traffic increases.
+  - Fault tolerance – If one server fails, other servers continue running.
+  - Cost-effective – Many small servers can be cheaper than one very large server.
+  - Geographic distribution – Servers can be placed closer to users to reduce delay.
+
+Cons (Disadvantages)
+   - More complexity – Distributed systems are harder to build and maintain.
+   - Data consistency issues – Keeping data the same across many servers is difficult.
+   - Network overhead – Servers need to communicate with each other, which can add delay.
+   - Stateless requirement – Applications often need to be stateless, which may require changes in the system design. 🚀
+
