@@ -1,0 +1,71 @@
+Steps to solve a problem : 
+
+
+1: Clarify Requirements
+
+* Functional requirements
+* Non Functional Requirements 
+
+Functional: 
+  What should the system do?
+	  Example: search, like, comment, upload, pagination.
+Non Functional: 
+	-Performance ⚡
+	-Scalability
+	-Accessibility
+	-SEO
+  -Responsiveness (mobile/desktop)
+
+2: Identify Core Components
+    : Break the UI into reusable components.
+Focus on:
+  -Component hierarchy
+  -Reusability
+  -Separation of concerns
+
+3:State Management
+  : Decide where the state should live.
+Types of state:
+	- Local State[component state]
+	- Shared state[context API/ store]
+  - Server state [ API data] 
+
+4: Data Fetching Strategy: 
+  : explain how the frontend communicates with backend APIs. 
+	 	- REST or GraphQL?
+		- Pagination or infinite scroll?
+	  - Caching strategy? (Avoids unnecessary API calls)
+		- Local storage
+		- Browser cache
+		- Query caching 
+
+5: Performance optimization: 
+	Techniques: 
+	- Lazy Loading 
+	- Code splitting 
+	- memoization
+	- virtualization 
+	- Debouncing 
+
+6: Handling Edge cases
+	- Internet/Network failures
+	- Empty states
+	- Loading states
+	- Partial Data
+	- offline mode
+
+7: Security Considerations
+ 	- XSS protection
+	- Input validation
+	- Token handling
+	- CSRF protection
+
+8: Accessibility & Responsiveness
+	- Keyboard Navigation 
+	- Screen Readers
+	- different devices(mobile, desktop, laptops)
+
+
+
+
+
