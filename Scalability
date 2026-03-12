@@ -55,3 +55,8 @@ Cons (Disadvantages)
 Note : For horizontal scaling to work effectively, services should be stateless. A stateless service does not store any session data locally. 
 Each request can be handled by any server. [ any server should access common DB , means no server should be dependent on local data ]
 
+To make services stateless:
+  -Store session data in a shared cache (Redis, Memcached)
+  -Use tokens (JWT) instead of server-side sessions
+  -Store uploaded files in object storage (S3) instead of local disk
+
