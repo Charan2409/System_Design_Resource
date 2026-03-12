@@ -51,3 +51,7 @@ Cons (Disadvantages)
    - Network overhead – Servers need to communicate with each other, which can add delay.
    - Stateless requirement – Applications often need to be stateless, which may require changes in the system design. 🚀
 
+
+Note : For horizontal scaling to work effectively, services should be stateless. A stateless service does not store any session data locally. 
+Each request can be handled by any server. [ any server should access common DB , means no server should be dependent on local data ]
+
